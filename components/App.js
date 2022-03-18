@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {StyleSheet} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet } from 'react-native';
 import {
   ViroARScene,
   ViroText,
@@ -13,7 +13,7 @@ const HelloWorldSceneAR = () => {
   function onInitialized(state, reason) {
     console.log('guncelleme', state, reason);
     if (state === ViroConstants.TRACKING_NORMAL) {
-      setText('Hello World!');
+      setText('Hello world asjdnadijasdonsadi');
     } else if (state === ViroConstants.TRACKING_NONE) {
       // Handle loss of tracking
     }
@@ -23,8 +23,8 @@ const HelloWorldSceneAR = () => {
     <ViroARScene onTrackingUpdated={onInitialized}>
       <ViroText
         text={text}
-        scale={[0.5, 0.5, 0.5]}
-        position={[0, 0, -1]}
+        scale={[1, 1, 1]}
+        position={[0, 0.5, -3]}
         style={styles.helloWorldTextStyle}
       />
     </ViroARScene>
@@ -44,7 +44,7 @@ export default () => {
 };
 
 var styles = StyleSheet.create({
-  f1: {flex: 1},
+  f1: { flex: 1 },
   helloWorldTextStyle: {
     fontFamily: 'Arial',
     fontSize: 30,
