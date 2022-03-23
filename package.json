@@ -12,7 +12,7 @@
   "dependencies": {
     "@viro-community/react-viro": "^2.20.2",
     "react": "17.0.2",
-    "react-native": "0.65.1"
+    "react-native": "0.67.4"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -25,6 +25,17 @@
     "react-native-codegen": "^0.0.7",
     "react-test-renderer": "17.0.2"
   },
+  "files": [
+    "components",
+    "android/react_viro",
+    "android/viro_renderer",
+    "android/gvr_common",
+    "android/arcore_client",
+    "ios/dist",
+    "ios/ViroReact.podspec",
+    "bin",
+    "LICENSE"
+  ],
   "jest": {
     "preset": "react-native"
   }
