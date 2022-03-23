@@ -1,55 +1,74 @@
 import React, { useState } from 'react';
-import { StyleSheet } from 'react-native';
 import {
   ViroARScene,
-  ViroText,
+  Viro3DObject,
   ViroConstants,
   ViroARSceneNavigator,
+  ViroARTrackingTargets,
+  ViroARImageMarker,
+  ViroMaterials,
+  ViroAmbientLight
 } from '@viro-community/react-viro';
 
 const HelloWorldSceneAR = () => {
-  const [text, setText] = useState('Initializing AR...');
 
   function onInitialized(state, reason) {
     console.log('guncelleme', state, reason);
     if (state === ViroConstants.TRACKING_NORMAL) {
-      setText('Hello world asjdnadijasdonsadi');
     } else if (state === ViroConstants.TRACKING_NONE) {
-      // Handle loss of tracking
+      console.log('tracking lost...')
     }
   }
 
+  ViroARTrackingTargets.createTargets({
+    "targetOne": {
+      source: require('../assets/qr.png'),
+      physicalWidth: 1,
+      orientation: 'Up'
+    },
+  });
+
+  ViroMaterials.createMaterials({
+    heart: {
+      lightingModel: "Blinn",
+      // diffuseTexture: require('./res/Heart_D3.jpg'),
+      // specularTexture: require('./res/Heart_S2.jpg'),
+    },
+  });
+
+
+  const found = () => {
+    console.log('found')
+  }
+
   return (
+
     <ViroARScene onTrackingUpdated={onInitialized}>
-      <ViroText
-        text={text}
-        scale={[1, 1, 1]}
-        position={[0, 0.5, -3]}
-        style={styles.helloWorldTextStyle}
-      />
+      <ViroARImageMarker target="targetOne" onAnchorFound={found}>
+        <ViroAmbientLight color="#FF0000" />
+        <Viro3DObject
+          scale={[0.01, 0.01, 0.01]}
+          texture
+          source={require('./res/test/test.obj')}
+          resources={[require('./res/test/test.mtl')]}
+          type="OBJ"
+          materials={["heart"]}
+        />
+      </ViroARImageMarker>
     </ViroARScene>
   );
 };
 
 export default () => {
+
   return (
+
+
     <ViroARSceneNavigator
       autofocus={true}
       initialScene={{
         scene: HelloWorldSceneAR,
       }}
-      style={styles.f1}
     />
   );
 };
-
-var styles = StyleSheet.create({
-  f1: { flex: 1 },
-  helloWorldTextStyle: {
-    fontFamily: 'Arial',
-    fontSize: 30,
-    color: '#ffffff',
-    textAlignVertical: 'center',
-    textAlign: 'center',
-  },
-});
