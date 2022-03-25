@@ -3,10 +3,14 @@ import { createAppContainer } from 'react-navigation';
 
 // Screens
 import Home from '../screens/Home.js'
+import Camera from '../screens/Camera.js'
 
 const screens = {
     HomeView: {
-        screen: Home
+        screen: Camera
+    },
+    CameraView: {
+        screen: Camera
     },
 
 }
