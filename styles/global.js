@@ -15,7 +15,7 @@ export const globalStyles = StyleSheet.create({
         bottom: 0,
         backgroundColor: '#67AEDF',
         borderTopLeftRadius: 100,
-        borderTopRightRadius: 50
+        borderTopRightRadius: 100
     },
     midLine2: {
         position: 'absolute',
