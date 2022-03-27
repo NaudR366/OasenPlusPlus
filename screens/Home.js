@@ -12,7 +12,7 @@ export default function App() {
             <StatusBar style="auto" />
 
             <Image
-                style={globalStyles.oasenLogo}
+                style={globalStyles.oasenLogoHome}
                 source={require('../assets/oasen.png')}
             />
 
@@ -21,7 +21,7 @@ export default function App() {
             >{'Educatie'}
             </Text>
 
-            <View style={globalStyles.midLine}>
+                <View style={globalStyles.midLine}>
 
                 <View style={globalStyles.midLine2} />
 
@@ -42,10 +42,10 @@ export default function App() {
 
             <TouchableOpacity
                 onPress={buttonClickedHandler}
-                style={globalStyles.roundButton2}>
+                style={globalStyles.informatieButton}>
 
                 <Text
-                    style={globalStyles.textMenu}
+                    style={globalStyles.OptionsText}
                 >{'Informatie'}
                 </Text>
 

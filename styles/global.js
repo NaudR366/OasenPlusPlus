@@ -1,11 +1,13 @@
 import { StyleSheet } from "react-native";
+import { RotationGestureHandler } from "react-native-gesture-handler";
 
 export const globalStyles = StyleSheet.create({
 
     //Home.js
 
     container: {
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        height: 850
     },
     midLine: {
         position: 'absolute',
@@ -53,7 +55,7 @@ export const globalStyles = StyleSheet.create({
         borderColor: '#5078DF',
         backgroundColor: 'white',
     },
-    roundButton2: {
+    informatieButton: {
         position: 'absolute',
         marginLeft: 70,
         marginTop: 700,
@@ -67,7 +69,7 @@ export const globalStyles = StyleSheet.create({
         borderColor: '#5078DF',
         backgroundColor: '#67AEDF',
     },
-    oasenLogo: {
+    oasenLogoHome: {
         width: 300,
         height: 100,
         margin: 50
@@ -87,11 +89,102 @@ export const globalStyles = StyleSheet.create({
         fontSize: 25,
         fontWeight: 'bold',
         color: 'white'
+    },
+
+    //Options.js
+
+    oasenLogoOptions: {
+        width: 150,
+        height: 50,
+        position: 'absolute',
+        top: -100,
+        left: 20,
+        marginTop: 200
+    },
+    midLine4: {
+        height: 700,
+        width: 700,
+        backgroundColor: '#67AEDF',
+        marginTop: 200,
+        borderTopLeftRadius: 200,
+    },
+    midLine5: {
+        height:400,
+        width: 400,
+        backgroundColor: '#67AEDF',
+        top: -160,
+        left: 200,
+        borderTopLeftRadius: 300
+    },
+    midLine6: {
+        height: 700,
+        width: 700,
+        backgroundColor: '#D0ECFF',
+        marginTop: -330,
+        borderTopLeftRadius: 200,
+    },
+    midLine7: {
+        height:400,
+        width: 400,
+        backgroundColor: '#D0ECFF',
+        top: -800,
+        left: 200,
+        borderTopLeftRadius: 300
+    },
+    scannerButton: {
+        position: 'absolute',
+        marginLeft: 50,
+        marginTop: 250,
+        width: 300,
+        height: 200,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10,
+        borderRadius: 20,
+        borderWidth: 5,
+        borderColor: '#5078DF',
+        backgroundColor: 'white',
+    },
+    KaartenButton: {
+        position: 'absolute',
+        marginLeft: 50,
+        marginTop: 500,
+        width: 300,
+        height: 200,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10,
+        borderRadius: 20,
+        borderWidth: 5,
+        borderColor: '#5078DF',
+        backgroundColor: 'white',
+    },
+    OptionsLabel: {
+        position: 'absolute',
+        backgroundColor: '#5078DF',
+        top: 160,
+        width: 250,
+        height: 60,
+        borderRadius: 20,
+    },
+    OptionsText: {
+        position: 'absolute',
+        top: 175,
+        color: 'white',
+        fontSize: 25,
+        fontWeight: 'bold',
+    }, 
+    backButton: {
+        position: 'absolute',
+        marginTop:100,
+        right: 0,
+        width: 100,
+        height: 70,
+        borderTopLeftRadius: 20,
+        borderBottomLeftRadius: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderColor: '#5078DF',
+        backgroundColor: '#838383',
     }
-    // backgroundColor: '#D0ECFF',
-    //   position: 'absolute',
-    //   bottom: 0,
-    //   height: 422,
-    //   width: 390,
-    
 });
