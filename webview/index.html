@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>Document</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.jss"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 
 <body>
   <a-scene embedded arjs>
     <a-entity scale=".2 .2 .2">
-      <a-entity gltf-model="assets/webview/fox.glb" scale="10 10 10" rotation="270 0 0" position="0 -240 0"></a-entity>
+      <a-entity gltf-model="assets/webview_assets/fox.glb" scale="10 10 10" rotation="270 0 0" position="0 -240 0"></a-entity>
     </a-entity>
     <a-marker-camera preset="hiro"></a-marker-camera>
   </a-scene>
