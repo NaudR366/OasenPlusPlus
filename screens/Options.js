@@ -18,16 +18,16 @@ export default function Options({ navigation }) {
 
             <View style={globalStyles.midLine4}>
 
-            <View style={globalStyles.midLine5} />
+                <View style={globalStyles.midLine5} />
 
-            <View style={globalStyles.midLine6} />
+                <View style={globalStyles.midLine6} />
 
-            <View style={globalStyles.midLine7} />
+                <View style={globalStyles.midLine7} />
 
             </View>
 
             <TouchableOpacity
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('HomeView')}
                 style={globalStyles.backButton}>
 
                 <Image
@@ -46,7 +46,7 @@ export default function Options({ navigation }) {
                     source={require('../assets/scannerButton.png')}
                 />
 
-                <View style={globalStyles.OptionsLabel}/>
+                <View style={globalStyles.OptionsLabel} />
 
                 <Text
                     style={globalStyles.OptionsText}
@@ -64,7 +64,7 @@ export default function Options({ navigation }) {
                     source={require('../assets/kaartenButton.png')}
                 />
 
-                <View style={globalStyles.OptionsLabel}/>
+                <View style={globalStyles.OptionsLabel} />
 
                 <Text
                     style={globalStyles.OptionsText}
@@ -72,10 +72,10 @@ export default function Options({ navigation }) {
                 </Text>
 
             </TouchableOpacity>
-            
-            
 
-            
+
+
+
 
         </View>
     );

@@ -6,11 +6,11 @@ import Home from '../screens/Home.js'
 import Options from '../screens/Options.js'
 
 const screens = {
-    OptionsView: {
-        screen: Options
-    },
     HomeView: {
         screen: Home
+    },
+    OptionsView: {
+        screen: Options
     },
 
 }
