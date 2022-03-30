@@ -36,18 +36,6 @@ export default function Cards({ navigation }) {
 
             </TouchableOpacity>
             <View style={globalStyles.CardButton}>
-
-                <Image
-                    style={{ width: 300, height: 500, bottom: 15 }}
-                    source={require('../assets/card.png')}
-                />
-                <Text
-                    style={globalStyles.CardText}
-                >{'Hier komt informatie te staan.'}
-                </Text>
-            </View>
-                  <View style={globalStyles.CardButton}>
-
                 <Image
                     style={{ width: 300, height: 500, bottom: 15 }}
                     source={require('../assets/card.png')}
