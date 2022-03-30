@@ -186,5 +186,30 @@ export const globalStyles = StyleSheet.create({
         alignItems: 'center',
         borderColor: '#5078DF',
         backgroundColor: '#838383',
-    }
+    },
+
+    // Card.js 
+
+    CardButton:{
+        position: 'absolute',
+        marginLeft: 50,
+        marginTop: 200,
+        width: 300,
+        height: 500,
+        alignItems: 'center',
+        padding: 10,
+        borderRadius: 20,
+        borderWidth: 5,
+        borderColor: '#5078DF',
+        backgroundColor: 'white',
+    },
+    CardText:{
+        position: 'absolute',
+        top: 500,
+        textAlign: 'center',
+        color: 'black',
+        fontSize: 25,
+        fontWeight: 'bold',
+    },
+
 });
