@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import { Button, StyleSheet, Text, View, TouchableOpacity, Image, ScrollView} from 'react-native';
 import { globalStyles } from "../styles/global";
 
 export default function Cards({ navigation }) {
@@ -35,16 +35,24 @@ export default function Cards({ navigation }) {
                 />
 
             </TouchableOpacity>
+
             <View style={globalStyles.CardButton}>
-                <Image
-                    style={{ width: 300, height: 500, bottom: 15 }}
-                    source={require('../assets/card.png')}
-                />
-                <Text
-                    style={globalStyles.CardText}
-                >{'Hier komt informatie te staan.'}
-                </Text>
+            <ScrollView showsVerticalScrollIndicator={false}>
+                <Image style={{ width: 300, height: 500 }}source={require('../assets/card.png')}/>
+                    <Text style={globalStyles.CardText} >
+                        {'Hier komt informatie te staan.'}
+                    </Text>
+                <Image style={{ width: 300, height: 500 }} source={require('../assets/card.png')}/>
+                    <Text style={globalStyles.CardText}>
+                        {'Hier komt informatie te staan.'}
+                    </Text>
+                <Image style={{ width: 300, height: 500 }} source={require('../assets/card.png')}/>
+                    <Text style={globalStyles.CardText}>
+                        {'Hier komt informatie te staan.'}
+                    </Text>
+                </ScrollView>
             </View>
+  
         </View>
     );
 }
