@@ -5,10 +5,11 @@ import { createAppContainer } from 'react-navigation';
 import Home from '../screens/Home.js'
 import Options from '../screens/Options.js'
 import Cards from '../screens/Card.js';
+import Camera from '../screens/Camera.js'
 
 const screens = {
     HomeView: {
-        screen: Camera
+        screen: Home
     },
     CameraView: {
         screen: Camera

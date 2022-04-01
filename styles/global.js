@@ -6,8 +6,9 @@ export const globalStyles = StyleSheet.create({
     //Home.js
 
     container: {
+        height: '100%',
         backgroundColor: 'white',
-        height: 850
+        alignItems: 'center',
     },
     midLine: {
         position: 'absolute',
@@ -42,18 +43,7 @@ export const globalStyles = StyleSheet.create({
         borderTopRightRadius: 200
     },
     roundButton1: {
-        position: 'absolute',
-        marginLeft: 100,
-        marginTop: 250,
-        width: 200,
-        height: 200,
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 10,
-        borderRadius: 100,
-        borderWidth: 20,
-        borderColor: '#5078DF',
-        backgroundColor: 'white',
+        marginTop: 50
     },
     informatieButton: {
         position: 'absolute',
@@ -72,15 +62,21 @@ export const globalStyles = StyleSheet.create({
     oasenLogoHome: {
         width: 300,
         height: 100,
-        margin: 50
+        alignContent: "center",
+        alignSelf: "center",
+        marginTop: 75
     },
     textLogo: {
-        position: 'absolute',
-        marginLeft: 140,
-        marginTop: 170,
+        textAlign: "center",
         fontSize: 30,
         fontWeight: 'bold',
-        color: '#5078DF'
+        color: '#5078DF',
+    },
+    playButton: {
+        alignSelf: "center",
+        width: 170,
+        height: 170,
+        marginTop: 50
     },
     textMenu: {
         position: 'absolute',
@@ -109,7 +105,7 @@ export const globalStyles = StyleSheet.create({
         borderTopLeftRadius: 200,
     },
     midLine5: {
-        height:400,
+        height: 400,
         width: 400,
         backgroundColor: '#67AEDF',
         top: -160,
@@ -124,7 +120,7 @@ export const globalStyles = StyleSheet.create({
         borderTopLeftRadius: 200,
     },
     midLine7: {
-        height:400,
+        height: 400,
         width: 400,
         backgroundColor: '#D0ECFF',
         top: -800,
@@ -173,10 +169,10 @@ export const globalStyles = StyleSheet.create({
         color: 'white',
         fontSize: 25,
         fontWeight: 'bold',
-    }, 
+    },
     backButton: {
         position: 'absolute',
-        marginTop:100,
+        marginTop: 100,
         right: 0,
         width: 100,
         height: 70,
@@ -190,21 +186,21 @@ export const globalStyles = StyleSheet.create({
 
     // Card.js 
 
-    CardButton:{
+    CardButton: {
         position: 'absolute',
-        top: 200, 
-        left: 30,  
+        top: 200,
+        left: 30,
         marginBottom: 200,
         width: 350,
         height: 650,
         alignItems: 'center',
-        justifyContent: 'center', 
+        justifyContent: 'center',
         padding: 10,
         borderRadius: 20,
         borderWidth: 5,
         borderColor: '#5078DF',
     },
-    CardText:{
+    CardText: {
         position: 'relative',
         top: 25,
         paddingBottom: 50,
