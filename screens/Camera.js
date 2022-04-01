@@ -7,10 +7,12 @@ export default function Camera() {
         <WebView
             showsVerticalScrollIndicator={false}
             style={styles.container}
-            source={{ uri: 'https://facebook.com' }}
+            source={IndexHTML}
         />
     )
 }
+
+const IndexHTML = require('../webview/index.html');
 
 const styles = StyleSheet.create({
     container: {
