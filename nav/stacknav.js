@@ -5,14 +5,14 @@ import { createAppContainer } from 'react-navigation';
 import Home from '../screens/Home.js'
 import Options from '../screens/Options.js'
 import Cards from '../screens/Card.js';
-import Camera from '../screens/Camera.js'
+import Scanner from '../screens/Scanner.js'
 
 const screens = {
     HomeView: {
         screen: Home
     },
     CameraView: {
-        screen: Camera
+        screen: Scanner
     },
     OptionsView: {
         screen: Options
@@ -25,7 +25,7 @@ const screens = {
 const HomeStack = createStackNavigator(screens, {
     defaultNavigationOptions: {
         headerShown: false,
-        gestureEnabled: false,
+        gestureEnabled: true,
         animationEnabled: true,
         cardOverlayEnabled: false
     }

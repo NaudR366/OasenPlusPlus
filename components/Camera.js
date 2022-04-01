@@ -5,7 +5,7 @@ import { WebView } from 'react-native-webview';
 import { Camera } from 'expo-camera'
 import { ActivityIndicator } from 'react-native';
 
-export default function App() {
+export default function App({ navigation }) {
 
     const [hasPermission, setHasPermission] = useState(null);
     const [type, setType] = useState(Camera.Constants.Type.back);
@@ -50,7 +50,6 @@ export default function App() {
                 originWhitelist={['*']}
                 allowsInlineMediaPlayback
                 javaScriptEnabled
-                scalesPageToFit
                 mediaPlaybackRequiresUserAction={false}
                 javaScriptEnabledAndroid
                 useWebkit
@@ -65,7 +64,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#1c4154',
-        paddingTop: 20
+
     },
     activityContainer: {
         alignItems: 'center',

@@ -6,7 +6,7 @@ export default function HeaderBackButton({ navTo, nav }) {
     return (
         <View style={{ right: 0, alignSelf: 'flex-end' }}>
             <TouchableOpacity onPress={() => { nav.navigate(navTo), Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium) }} style={globalStyles.backButton}>
-                <Image style={{ width: 70, height: 30 }} source={require('../assets/backArrow.png')} />
+                <Image style={{ width: 50, height: 30 }} source={require('../assets/exitButton.png')} />
             </TouchableOpacity>
         </View>
     )

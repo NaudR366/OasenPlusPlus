@@ -11,7 +11,7 @@ export default function Options({ navigation }) {
 
                 <BackButton nav={navigation} navTo="HomeView" />
 
-                <TouchableOpacity onPress={null} style={globalStyles.scannerButton}>
+                <TouchableOpacity onPress={() => { navigation.navigate('CameraView'), Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium) }} style={globalStyles.scannerButton}>
                     <Image style={{ width: 200, height: 150, bottom: 15 }} source={require('../assets/scannerButton.png')} />
                     <View style={globalStyles.OptionsLabel} />
                     <Text style={globalStyles.OptionsText}>Scanner</Text>
@@ -22,6 +22,7 @@ export default function Options({ navigation }) {
                     <View style={globalStyles.OptionsLabel} />
                     <Text style={globalStyles.OptionsText}>Kaarten</Text>
                 </TouchableOpacity>
+
             </ImageBackground>
         </View>
     );
