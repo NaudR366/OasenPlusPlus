@@ -1,6 +1,7 @@
 import { useRef } from 'react';
-import { Text, View, TouchableOpacity, Image, ScrollView, Animated } from 'react-native';
+import { Text, View, Image, ScrollView, Animated } from 'react-native';
 import { globalStyles } from "../styles/global";
+import BackButton from '../components/BackButton.js'
 
 export default function Cards({ navigation }) {
     const scrollX = useRef(new Animated.Value(0)).current
@@ -8,9 +9,7 @@ export default function Cards({ navigation }) {
     return (
         <View style={globalStyles.container}>
             <Image style={globalStyles.oasenLogoOptions} source={require('../assets/oasen.png')} />
-            <TouchableOpacity onPress={() => navigation.navigate('OptionsView')} style={globalStyles.backButton}>
-                <Image style={{ width: 70, height: 30 }} source={require('../assets/backArrow.png')} />
-            </TouchableOpacity>
+            <BackButton nav={navigation} navTo="OptionsView" />
 
             <View style={globalStyles.CardContainer}>
                 <ScrollView showsVerticalScrollIndicator={false} style={{ marginBottom: 250 }} scrollEnabled pagingEnabled scrollEventThrottle={16} showsHorizontalScrollIndicator={false} bounces={true}>

@@ -150,7 +150,6 @@ export const globalStyles = StyleSheet.create({
         borderBottomLeftRadius: 20,
         justifyContent: 'center',
         alignItems: 'center',
-        borderColor: '#5078DF',
         backgroundColor: '#838383',
     },
 

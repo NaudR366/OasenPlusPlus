@@ -1,5 +1,6 @@
 import { ImageBackground, Text, View, TouchableOpacity, Image } from 'react-native';
 import { globalStyles } from "../styles/global";
+import BackButton from '../components/BackButton.js'
 import * as Haptics from 'expo-haptics';
 
 export default function Options({ navigation }) {
@@ -8,9 +9,7 @@ export default function Options({ navigation }) {
             <ImageBackground source={require('../assets/bg.png')} style={{ width: '100%', height: '100%' }}>
                 <Image style={globalStyles.oasenLogoOptions} source={require('../assets/oasen.png')} />
 
-                <TouchableOpacity onPress={() => { navigation.navigate('HomeView'), Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium) }} style={globalStyles.backButton}>
-                    <Image style={{ width: 70, height: 30 }} source={require('../assets/backArrow.png')} />
-                </TouchableOpacity>
+                <BackButton nav={navigation} navTo="HomeView" />
 
                 <TouchableOpacity onPress={null} style={globalStyles.scannerButton}>
                     <Image style={{ width: 200, height: 150, bottom: 15 }} source={require('../assets/scannerButton.png')} />
