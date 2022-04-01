@@ -8,7 +8,10 @@ import Cards from '../screens/Card.js';
 
 const screens = {
     HomeView: {
-        screen: Home
+        screen: Camera
+    },
+    CameraView: {
+        screen: Camera
     },
     OptionsView: {
         screen: Options
