@@ -144,7 +144,7 @@ export const globalStyles = StyleSheet.create({
         position: 'absolute',
         marginTop: 100,
         right: 0,
-        width: 90,
+        width: 80,
         height: 60,
         borderTopLeftRadius: 20,
         borderBottomLeftRadius: 20,
