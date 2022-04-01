@@ -4,7 +4,6 @@ import { globalStyles } from "../styles/global";
 
 export default function App({ navigation }) {
     const buttonClickedHandler = () => {
-        navigation.navigate("OptionsView")
         console.log('werkt goed');
     }
     return (
@@ -31,7 +30,7 @@ export default function App({ navigation }) {
             </View>
 
             <TouchableOpacity
-                onPress={buttonClickedHandler}
+                 onPress={() =>navigation.navigate("OptionsView")}     
                 style={globalStyles.roundButton1}>
 
                 <Image
@@ -46,8 +45,8 @@ export default function App({ navigation }) {
                 style={globalStyles.informatieButton}>
 
                 <Text
-                    style={globalStyles.OptionsText}
-                >{'Informatie'}
+                    style={globalStyles.textMenu}>
+                        {"Informatie"}
                 </Text>
 
             </TouchableOpacity>

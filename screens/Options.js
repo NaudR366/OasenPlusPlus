@@ -56,7 +56,7 @@ export default function Options({ navigation }) {
             </TouchableOpacity>
 
             <TouchableOpacity
-                onPress={buttonClickedHandler}
+                onPress={() => navigation.navigate('CardsView')}
                 style={globalStyles.KaartenButton}>
 
                 <Image

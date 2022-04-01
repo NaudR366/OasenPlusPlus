@@ -4,6 +4,7 @@ import { createAppContainer } from 'react-navigation';
 // Screens
 import Home from '../screens/Home.js'
 import Options from '../screens/Options.js'
+import Cards from '../screens/Card.js';
 
 const screens = {
     HomeView: {
@@ -11,6 +12,9 @@ const screens = {
     },
     OptionsView: {
         screen: Options
+    },
+    CardsView: {
+        screen: Cards
     },
 
 }
