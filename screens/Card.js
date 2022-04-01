@@ -1,58 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View, TouchableOpacity, Image, ScrollView} from 'react-native';
+import { useRef } from 'react';
+import { Text, View, TouchableOpacity, Image, ScrollView, Animated } from 'react-native';
 import { globalStyles } from "../styles/global";
 
 export default function Cards({ navigation }) {
-    const buttonClickedHandler = () => {
-    }
+    const scrollX = useRef(new Animated.Value(0)).current
+    const slidesRef = useRef(null)
     return (
         <View style={globalStyles.container}>
-
-            <StatusBar style="auto" />
-
-            <Image
-                style={globalStyles.oasenLogoOptions}
-                source={require('../assets/oasen.png')}
-            />
-
-            <View style={globalStyles.midLine4}>
-
-                <View style={globalStyles.midLine5} />
-
-                <View style={globalStyles.midLine6} />
-
-                <View style={globalStyles.midLine7} />
-
-            </View>
-
-            <TouchableOpacity
-                onPress={() => navigation.navigate('OptionsView')}
-                style={globalStyles.backButton}>
-
-                <Image
-                    style={{ width: 70, height: 30 }}
-                    source={require('../assets/backArrow.png')}
-                />
-
+            <Image style={globalStyles.oasenLogoOptions} source={require('../assets/oasen.png')} />
+            <TouchableOpacity onPress={() => navigation.navigate('OptionsView')} style={globalStyles.backButton}>
+                <Image style={{ width: 70, height: 30 }} source={require('../assets/backArrow.png')} />
             </TouchableOpacity>
 
-            <View style={globalStyles.CardButton}>
-            <ScrollView showsVerticalScrollIndicator={false}>
-                <Image style={{ width: 300, height: 500 }}source={require('../assets/card.png')}/>
-                    <Text style={globalStyles.CardText} >
-                        {'Hier komt informatie te staan.'}
-                    </Text>
-                <Image style={{ width: 300, height: 500 }} source={require('../assets/card.png')}/>
-                    <Text style={globalStyles.CardText}>
-                        {'Hier komt informatie te staan.'}
-                    </Text>
-                <Image style={{ width: 300, height: 500 }} source={require('../assets/card.png')}/>
-                    <Text style={globalStyles.CardText}>
-                        {'Hier komt informatie te staan.'}
-                    </Text>
+            <View style={globalStyles.CardContainer}>
+                <ScrollView showsVerticalScrollIndicator={false} style={{ marginBottom: 250 }} scrollEnabled pagingEnabled scrollEventThrottle={16} showsHorizontalScrollIndicator={false} bounces={true}>
+                    <View>
+                        <Image style={globalStyles.cardImage} source={require('../assets/Circle.png')} />
+                        <Text style={globalStyles.CardText} >Hier komt informatie te staan.</Text>
+                    </View>
+                    <View>
+                        <Image style={globalStyles.cardImage} source={require('../assets/Circle.png')} />
+                        <Text style={globalStyles.CardText} >Hier komt informatie te staan.</Text>
+                    </View>
+                    <View>
+                        <Image style={globalStyles.cardImage} source={require('../assets/Circle.png')} />
+                        <Text style={globalStyles.CardText} >Hier komt informatie te staan.</Text>
+                    </View>
                 </ScrollView>
             </View>
-  
+
         </View>
     );
 }

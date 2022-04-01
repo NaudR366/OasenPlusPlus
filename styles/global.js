@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { RotationGestureHandler } from "react-native-gesture-handler";
+import { Dimensions } from 'react-native';
 
 export const globalStyles = StyleSheet.create({
 
@@ -97,36 +97,6 @@ export const globalStyles = StyleSheet.create({
         left: 20,
         marginTop: 200
     },
-    midLine4: {
-        height: 700,
-        width: 700,
-        backgroundColor: '#67AEDF',
-        marginTop: 200,
-        borderTopLeftRadius: 200,
-    },
-    midLine5: {
-        height: 400,
-        width: 400,
-        backgroundColor: '#67AEDF',
-        top: -160,
-        left: 200,
-        borderTopLeftRadius: 300
-    },
-    midLine6: {
-        height: 700,
-        width: 700,
-        backgroundColor: '#D0ECFF',
-        marginTop: -330,
-        borderTopLeftRadius: 200,
-    },
-    midLine7: {
-        height: 400,
-        width: 400,
-        backgroundColor: '#D0ECFF',
-        top: -800,
-        left: 200,
-        borderTopLeftRadius: 300
-    },
     scannerButton: {
         position: 'absolute',
         marginLeft: 50,
@@ -186,27 +156,25 @@ export const globalStyles = StyleSheet.create({
 
     // Card.js 
 
-    CardButton: {
-        position: 'absolute',
-        top: 200,
-        left: 30,
-        marginBottom: 200,
+    CardContainer: {
+        marginTop: 200,
+        alignSelf: 'center',
         width: 350,
-        height: 650,
+        height: Dimensions.get('window').height,
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10,
-        borderRadius: 20,
-        borderWidth: 5,
         borderColor: '#5078DF',
     },
     CardText: {
-        position: 'relative',
-        top: 25,
         paddingBottom: 50,
         textAlign: 'center',
         color: 'black',
-        fontSize: 25,
+        fontSize: 18,
         fontWeight: 'bold',
     },
+    cardImage: {
+        width: 237.44,
+        height: 384
+    }
 });
