@@ -8,7 +8,6 @@ export default function Options({ navigation }) {
         <View style={globalStyles.container}>
             <ImageBackground source={require('../assets/bg.png')} style={{ width: '100%', height: '100%' }}>
                 <Image style={globalStyles.oasenLogoOptions} source={require('../assets/oasen.png')} />
-
                 <BackButton nav={navigation} navTo="HomeView" />
 
                 <TouchableOpacity onPress={() => { navigation.navigate('CameraView'), Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium) }} style={globalStyles.scannerButton}>

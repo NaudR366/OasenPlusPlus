@@ -12,16 +12,16 @@ export default function Cards({ navigation }) {
             <BackButton nav={navigation} navTo="OptionsView" />
 
             <View style={globalStyles.CardContainer}>
-                <ScrollView showsVerticalScrollIndicator={false} style={{ marginBottom: 250 }} scrollEnabled pagingEnabled scrollEventThrottle={16} showsHorizontalScrollIndicator={false} bounces={true}>
-                    <View>
+                <ScrollView showsVerticalScrollIndicator={false} style={{ marginBottom: 250 }} horizontal scrollEnabled pagingEnabled scrollEventThrottle={16} showsHorizontalScrollIndicator={false} bounces={true}>
+                    <View style={{ marginLeft: 30, marginRight: 30, alignSelf: 'center' }} >
                         <Image style={globalStyles.cardImage} source={require('../assets/Circle.png')} />
                         <Text style={globalStyles.CardText} >Hier komt informatie te staan.</Text>
                     </View>
-                    <View>
+                    <View style={{ marginLeft: 50, marginRight: 30, alignSelf: 'center' }} >
                         <Image style={globalStyles.cardImage} source={require('../assets/Circle.png')} />
                         <Text style={globalStyles.CardText} >Hier komt informatie te staan.</Text>
                     </View>
-                    <View>
+                    <View style={{ marginLeft: 30, marginRight: 30, alignSelf: 'center' }} >
                         <Image style={globalStyles.cardImage} source={require('../assets/Circle.png')} />
                         <Text style={globalStyles.CardText} >Hier komt informatie te staan.</Text>
                     </View>

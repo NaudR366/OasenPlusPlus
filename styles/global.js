@@ -95,7 +95,8 @@ export const globalStyles = StyleSheet.create({
         position: 'absolute',
         top: -100,
         left: 20,
-        marginTop: 200
+        marginTop: 210,
+        marginLeft: 25
     },
     scannerButton: {
         position: 'absolute',
@@ -166,6 +167,7 @@ export const globalStyles = StyleSheet.create({
         borderColor: '#5078DF',
     },
     CardText: {
+        marginTop: 20,
         paddingBottom: 50,
         textAlign: 'center',
         color: 'black',
@@ -173,7 +175,7 @@ export const globalStyles = StyleSheet.create({
         fontWeight: 'bold',
     },
     cardImage: {
-        width: 237.44,
-        height: 384
+        width: '100%',
+        height: '75%'
     }
 });
