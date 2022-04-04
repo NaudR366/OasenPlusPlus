@@ -7,8 +7,8 @@ export default function Scanner({ navigation }) {
     return (
 
         <View style={{ flex: 1 }}>
-            <View style={{ marginTop: -50, flex: 0.3, backgroundColor: '#67AEDF', borderColor: '#D0ECFF', borderBottomWidth: 10 }} >
-                <Text style={{ marginTop: 115, marginLeft: 35, position: 'absolute', alignItems: 'flex-start', fontSize: 35, color: 'white' }} >Scan kaarten</Text>
+            <View style={{ marginTop: -40, flex: 0.3, backgroundColor: '#67AEDF', borderColor: '#D0ECFF', borderBottomWidth: 10, }} >
+                <Text style={{ marginTop: 110, marginLeft: 35, position: 'absolute', alignItems: 'flex-start', fontSize: 35, color: 'white' }} >Scan kaarten</Text>
                 <BackButton nav={navigation} navTo="OptionsView" />
             </View>
             <Camera />
