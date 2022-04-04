@@ -175,7 +175,6 @@ export const globalStyles = StyleSheet.create({
         fontWeight: 'bold',
     },
     cardImage: {
-        width: '100%',
-        height: '75%'
+        alignSelf: 'center'
     }
 });
