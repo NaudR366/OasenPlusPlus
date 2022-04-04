@@ -118,7 +118,7 @@ export const globalStyles = StyleSheet.create({
         padding: 10,
         borderRadius: 20,
         borderWidth: 5,
-        borderColor: '#5078DF',
+        borderColor: '#67AEDF',
         backgroundColor: 'white',
         shadowColor: "#000",
         shadowOffset: {
@@ -132,11 +132,20 @@ export const globalStyles = StyleSheet.create({
     },
     OptionsLabel: {
         position: 'absolute',
-        backgroundColor: '#5078DF',
+        backgroundColor: '#67AEDF',
         top: 160,
         width: 250,
         height: 60,
         borderRadius: 20,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.32,
+        shadowRadius: 5.46,
+
+        elevation: 9,
     },
     OptionsText: {
         position: 'absolute',
