@@ -13,15 +13,15 @@ export default function Cards({ navigation }) {
 
             <View style={globalStyles.CardContainer}>
                 <ScrollView showsVerticalScrollIndicator={false} style={{ marginBottom: 250 }} horizontal scrollEnabled pagingEnabled scrollEventThrottle={16} showsHorizontalScrollIndicator={false} bounces={true}>
-                    <View style={{ marginLeft: 30, marginRight: 30, alignSelf: 'center' }} >
+                    <View style={{ marginLeft: 40, marginRight: 30, alignSelf: 'center' }} >
                         <Image style={globalStyles.cardImage} source={require('../assets/Card-1.png')} />
                         <Text style={globalStyles.CardText} >Grondwater oppompen</Text>
                     </View>
-                    <View style={{ marginLeft: 50, marginRight: 30, alignSelf: 'center' }} >
+                    <View style={{ marginLeft: 60, marginRight: 20, alignSelf: 'center' }} >
                         <Image style={globalStyles.cardImage} source={require('../assets/Card-2.png')} />
                         <Text style={globalStyles.CardText} >Beluchting</Text>
                     </View>
-                    <View style={{ marginLeft: 30, marginRight: 30, alignSelf: 'center' }} >
+                    <View style={{ marginLeft: 40, marginRight: 40, alignSelf: 'center' }} >
                         <Image style={globalStyles.cardImage} source={require('../assets/Card-3.png')} />
                         <Text style={globalStyles.CardText} >Zandfiltratie</Text>
                     </View>

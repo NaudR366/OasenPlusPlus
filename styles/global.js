@@ -9,6 +9,7 @@ export const globalStyles = StyleSheet.create({
         height: '100%',
         backgroundColor: 'white',
         alignItems: 'center',
+
     },
     midLine: {
         position: 'absolute',
@@ -43,7 +44,16 @@ export const globalStyles = StyleSheet.create({
         borderTopRightRadius: 200
     },
     roundButton1: {
-        marginTop: 50
+        marginTop: 50,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.32,
+        shadowRadius: 5.46,
+
+        elevation: 9,
     },
     informatieButton: {
         position: 'absolute',
@@ -96,12 +106,11 @@ export const globalStyles = StyleSheet.create({
         top: -100,
         left: 20,
         marginTop: 210,
-        marginLeft: 25
+        marginLeft: 25,
     },
     scannerButton: {
-        position: 'absolute',
-        marginLeft: 50,
-        marginTop: 250,
+        alignSelf: 'center',
+        marginTop: 50,
         width: 300,
         height: 200,
         justifyContent: 'center',
@@ -111,20 +120,15 @@ export const globalStyles = StyleSheet.create({
         borderWidth: 5,
         borderColor: '#5078DF',
         backgroundColor: 'white',
-    },
-    KaartenButton: {
-        position: 'absolute',
-        marginLeft: 50,
-        marginTop: 500,
-        width: 300,
-        height: 200,
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 10,
-        borderRadius: 20,
-        borderWidth: 5,
-        borderColor: '#5078DF',
-        backgroundColor: 'white',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.32,
+        shadowRadius: 5.46,
+
+        elevation: 9,
     },
     OptionsLabel: {
         position: 'absolute',
@@ -152,6 +156,15 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#838383',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.32,
+        shadowRadius: 5.46,
+
+        elevation: 9,
     },
 
     // Card.js 
@@ -165,6 +178,16 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'center',
         padding: 10,
         borderColor: '#5078DF',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.32,
+        shadowRadius: 5.46,
+
+        elevation: 9,
+
     },
     CardText: {
         marginTop: 20,
@@ -175,6 +198,6 @@ export const globalStyles = StyleSheet.create({
         fontWeight: 'bold',
     },
     cardImage: {
-        alignSelf: 'center'
+        alignSelf: 'center',
     }
 });

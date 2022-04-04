@@ -3,8 +3,8 @@ import { createAppContainer } from 'react-navigation';
 
 // Screens
 import Home from '../screens/Home.js'
-import Options from '../screens/Options.js'
-import Cards from '../screens/Card.js';
+import Options from '../screens/Menu.js'
+import Cards from '../screens/Cards.js';
 import Scanner from '../screens/Scanner.js'
 
 const screens = {
